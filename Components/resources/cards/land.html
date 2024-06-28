@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talkspace</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .cards-container {
+            display: flex;
+            justify-content: space-around;
+            overflow-x: auto; 
+            max-width: 1000px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 200px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .card:nth-child(1) {
+            background-color: lightsteelblue; 
+        }
+
+        .card:nth-child(2) {
+            background-color: lightgoldenrodyellow; 
+        }
+
+        .card:nth-child(3) {
+            background-color: lightgray; 
+        }
+
+        .card:nth-child(4) {
+            background-color: pink; 
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        h3 {
+            color: #333;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: #007bff;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Feel better today, <br>stay ready for tomorrow</h1>
+    <p>What mental health support do you need?</p>
+
+    <div class="cards-container">
+        <div class="card">
+            <h3>Individual</h3>
+            <img src="individual.jpg" alt="Individuals" srcset="individualss">
+            <p>Therapy for me</p>
+            <a href="#Get started">Get started ></a>
+        </div>
+        <div class="card">
+            <h3>Teens</h3>
+            <img src="teenssss.jpeg" alt="Teens" srcset="Teenss">
+            <p>For ages 13-17</p>
+            <a href="#Get started">Get started ></a>
+        </div>
+        <div class="card">
+            <h3>Couples</h3>
+            <img src="couplessss.jpeg" alt="Couples" srcset="Couples">
+            <p>Therapy for us</p>
+            <a href="#Get started">Get started ></a>
+        </div>
+        <div class="card">
+            <h3>Medical</h3>
+            <img src="teens.jpg" alt="Medical" srcset="medicalss">
+            <p>Psychiatry and prescriptions</p>
+            <a href="#Get started">Get started ></a>
+        </div>
+    </div>
+
+    <script>
+        const cards = document.querySelectorAll('.card');
+
+        cards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.2)';
+            });
+            card.addEventListener('mouseleave', () => {
+                card.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.1)';
+            });
+        });
+    </script>
+</body>
+</html>

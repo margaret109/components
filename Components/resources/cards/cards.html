@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghan's Sneaker Store</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            max-width: 300px;
+            overflow: hidden;
+            transition: transform 0.2s;
+        }
+        .card img {
+            width: 100%;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        .card-content {
+            padding: 20px;
+        }
+        .card h3 {
+            margin: 0 0 10px;
+        }
+        .card p {
+            color: #555;
+        }
+        .card button {
+            background-color: #ff4500;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            font-size: 16px;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+        }
+        .card button:hover {
+            background-color: #e63e00;
+        }
+
+        @media (max-width: 768px) {
+            .card {
+                max-width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card {
+                max-width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="mens official.jpeg"  height="350px">
+            <div class="card-content">
+                <h3>Men's Official Shoes</h3>
+                <p>Explore our range of elegant and stylish official shoes for men.</p>
+                <button onclick="window.location.href='mens_official_shoes.html'">Shop Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="women heels.jpeg" height="350px">
+            <div class="card-content">
+                <h3>Women's Heels</h3>
+                <p>Discover our collection of fashionable heels for women.</p>
+                <button onclick="window.location.href='womens_heels.html'">Shop Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="unisex sneakers.jpeg" height="350px" >
+            <div class="card-content">
+                <h3>Unisex Sneakers</h3>
+                <p>Find the perfect pair of sneakers suitable for everyone.</p>
+                <button onclick="window.location.href='unisex_sneakers.html'">Shop Now</button>
+            </div>
+        </div>
+        <div class="card">
+            <img src="children sandals.jpeg" height="350px">
+            <div class="card-content">
+                <h3>Children's Sandals</h3>
+                <p>Check out our range of comfortable and stylish sandals for children.</p>
+                <button onclick="window.location.href='children_sandals.html'">Shop Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

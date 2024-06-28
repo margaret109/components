@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meghan Sneaker Store</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #121212;
+            color: #fff;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        #sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 100%;
+            background-color: #222;
+            padding-top: 20px;
+            overflow-x: hidden;
+            transition: 0.5s;
+        }
+
+        #sidebar a {
+            padding: 10px 15px;
+            text-decoration: none;
+            font-size: 18px;
+            color: #fff;
+            display: block;
+            transition: 0.3s;
+        }
+
+        #sidebar a:hover {
+            background-color: #575757;
+        }
+
+        #main {
+            margin-left: 220px;
+            padding: 20px;
+        }
+
+        #hero {
+            background: url('hero-image.jpg') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        #hero h2 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        #hero p {
+            font-size: 1.2em;
+        }
+
+        #hero button {
+            background-color: #f04e30;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        #hero button:hover {
+            background-color: #d9442a;
+        }
+
+        #products {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #products h2 {
+            margin-top: 50px;
+            font-size: 2em;
+            color: #f04e30;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product {
+            width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: center;
+            background-color: #222;
+        }
+
+        .product img {
+            width: 100%;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+
+        .product h3 {
+            font-size: 1.2em;
+            margin: 0;
+            color: #fff;
+        }
+
+        .product p {
+            font-size: 1em;
+            color: #f04e30;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Meghan Sneaker Store</h1>
+        </div>
+    </header>
+
+    <div id="sidebar">
+        <a href="#men-shoes">Men's Official Shoes</a>
+        <a href="#women-heels">Women's Heels</a>
+        <a href="#unisex-sneakers">Unisex Sneakers</a>
+        <a href="#children-sandals">Children's Sandals</a>
+    </div>
+
+    <div id="main">
+        <section id="hero">
+            <div class="container">
+                <h2>Your One-Stop Shop for Quality Footwear</h2>
+                <p>Discover our collection of men's official shoes, women's heels, unisex sneakers, and children's sandals.</p>
+                <button onclick="scrollToProducts()">Shop Now</button>
+            </div>
+        </section>
+        
+        <section id="products">
+            <div class="container">
+                <h2 id="men-shoes">Men's Official Shoes</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="men's official.jpg" alt="Men's Official Shoes">
+                        <h3>Men's Classic Shoes</h3>
+                        <p>ksh2,499</p>
+                    </div>
+                </div>
+                
+                <h2 id="women-heels">Women's Heels</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="Women Heels.jpg" alt="Women's Heels">
+                        <h3>Elegant Heels</h3>
+                        <p>ksh1,999</p>
+                    </div>
+                </div>
+                
+                <h2 id="unisex-sneakers">Unisex Sneakers</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="Unisex Sneakers.jpg" alt="Unisex Sneakers">
+                        <h3>Casual Sneakers</h3>
+                        <p>ksh3,499</p>
+                    </div>
+                </div>
+                
+                <h2 id="children-sandals">Children's Sandals</h2>
+                <div class="product-grid">
+                    <div class="product">
+                        <img src="childrenshoes.jpg" alt="Children's Sandals">
+                        <h3>Comfort Sandals</h3>
+                        <p>ksh1,499</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Meghan Sneaker Store. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function scrollToProducts() {
+            document.getElementById('products').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>

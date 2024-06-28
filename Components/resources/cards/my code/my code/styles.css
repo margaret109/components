@@ -1,0 +1,130 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+}
+
+.main-content {
+    padding: 20px;
+    flex-grow: 1;
+    background-color: darkred;
+}
+h1 {
+    margin-bottom: 40px;
+    font-size: xx-large;
+    color: black
+}
+h2 {
+    margin-bottom: 20px;
+    color: #dbe6ee;
+}
+
+/* Featured Items Section */
+.featured-items .items {
+    display: flex;
+    justify-content: space-around;
+}
+
+.featured-items .item {
+    text-align: center;
+}
+
+.featured-items .item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.featured-items .item h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: hwb(61 29% 7%);
+}
+
+.featured-items .item p {
+    color: rgb(23, 22, 4);
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Popular Categories Section */
+.popular-categories .categories {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.popular-categories .category {
+    text-align: center;
+}
+
+.popular-categories .category img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.popular-categories .category h3 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: rgb(232, 248, 19);
+}
+
+/* Deals Section */
+.deals .deals-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.deals .deal {
+    text-align: center;
+}
+
+.deals .deal img {
+    width: 150px;
+    height: 150px;
+    border-radius: 10px;
+}
+
+.deals .deal h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #eaf024;
+}
+
+.deals .deal p {
+    color: #0d0501fc;
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* Testimonials Section */
+.testimonials .testimonials-list {
+    margin-top: 20px;
+}
+
+.testimonials .testimonial {
+    background-color: rgb(48, 20, 21);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.testimonials .testimonial p {
+    font-size: 1rem;
+    color: hsl(0, 33%, 95%);
+}
+
+.testimonials .testimonial h4 {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #f7f706;
+}
